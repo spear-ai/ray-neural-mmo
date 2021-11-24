@@ -173,6 +173,7 @@ def summarize_episodes(
 
     for k, v_list in custom_metrics.copy().items():
         filt = [v for v in v_list if not np.any(np.isnan(v))]
+        custom_metrics[k] = filt; continue
         custom_metrics[k + "_mean"] = np.mean(filt)
         if filt:
             custom_metrics[k + "_min"] = np.min(filt)
