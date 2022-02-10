@@ -29,7 +29,7 @@ requests
 scikit-learn==0.22.2
 scipy==1.4.1
 tabulate
-tensorflow==2.0.1
+tensorflow==2.5.3
 torch
 torchvision
 uvicorn
